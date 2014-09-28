@@ -1,0 +1,66 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+h1{
+	font-size: 4em;
+	font-family: "Nothing You Could Do", cursive;
+}
+
+/* Navigation Bar CSS */
+#nav{
+	width: 100%;
+	height: 5%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+#nav div{
+	padding-top: .5%;
+	display: inline-block;
+	text-align: center;
+	width: 24%;
+}
+
+#nav a{
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-weight: 100;
+}
+
+/* Introduction CSS */
+#intro img{
+	left: 15%;
+	height: 60%;
+	z-index: 5;
+}
+
+#intro h1{
+	left: 40%
+}
+
+/* About CSS */
+#about img{
+	height: 60%;
+	z-index: 0;
+}
+
+/* Fun Facts CSS */
+#temple{
+	top: 10%;
+	left: 2%;
+	width: 100%;
+}
+
+/* End CSS */
+#end img{
+	width: 100%;
+	z-index: 10;
+}
