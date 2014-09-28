@@ -26,4 +26,6 @@ $(document).ready(function(){
   $(function() {
     skrollr.init();
   });
+
+  $("#gallery-container").css("height", $("#gallery-container").width());
 });
