@@ -11,7 +11,7 @@ a {
 
 h1{
 	font-size: 4em;
-	font-family: "Nothing You Could Do", cursive;
+	font-family: "Nothing You Could Do", "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
 }
 
 /* Navigation Bar CSS */
@@ -50,6 +50,10 @@ h1{
 .about-pics{
 	height: 68%;
 	z-index: -5;
+}
+
+.about a{
+	z-index: 200;
 }
 
 /* Fun Facts CSS */
