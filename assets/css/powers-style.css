@@ -1,0 +1,82 @@
+body{
+	background-color: #fafafa;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+h4{
+	margin: 0;
+}
+
+#back{
+  font-family: "Roboto", Calibri, sans-serif;
+  position: fixed;
+  top: 5%;
+  left: 3%;
+  background-color: white;
+  padding: 1% 3%;
+  opacity: .65;
+  z-index: 101;
+}
+
+#title{
+  font-family: "Nothing You Could Do", "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 7%;
+}
+
+#stats-container{
+	width: 70%;
+	background: rgba(199,101, 101,.8);
+	margin: 0 auto;
+	border-radius: 10px;
+	padding: 1%;
+}
+
+.subcategory{
+	float: left;
+	background-color: rgba(232,197, 197,.8);
+	border-radius: 10px;
+	text-align: center;
+	padding:1%;
+	margin: 1%;
+}
+
+.subcategory-r{
+	float: right;
+	background-color: rgba(232,197, 197,.8);
+	border-radius: 10px;
+	text-align: center;
+	padding:1%;
+	margin: 1%;
+}
+
+.subcategory-details{
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#basics{
+	width: 33%;
+}
+
+#basics img{
+	border-radius: 10px;
+	background-color: white;
+	width: 100%;
+}
+
+#width-25{
+	width: 27%;
+}
+
+#clear {
+  clear: both;
+  content: "";
+  display: block;
+}

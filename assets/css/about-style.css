@@ -1,5 +1,30 @@
+body{
+  background-color: #fafafa;
+}
+
+#back{
+  font-family: "Roboto", Calibri, sans-serif;
+  position: fixed;
+  top: 5%;
+  left: 3%;
+  background-color: white;
+  padding: 1% 3%;
+  opacity: .65;
+  z-index: 101;
+}
+
+#title{
+  font-size: 4em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
 #gallery{
-  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  font-family: "Nothing You Could Do", "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
   text-align: center;
   padding: 3%;
 }
@@ -17,7 +42,7 @@
 }
 
 h3{
-  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  font-family: "Nothing You Could Do", "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
   margin-bottom: 1%;
 }
 
@@ -73,7 +98,7 @@ h3{
 }
 
 .gallery-hidden{
-  font-family:"Gill Sans", "Gill Sans Light", Calibri, sans-serif;
+  font-family: "Roboto", Calibri, sans-serif;
   font-weight: 100;
   font-size: 2em;
   position: absolute;
