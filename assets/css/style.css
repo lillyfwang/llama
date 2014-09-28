@@ -20,7 +20,7 @@ h1{
 	height: 5%;
 	position: fixed;
 	top: 0;
-	z-index: 100;
+	z-index: 200;
 }
 
 #nav div{
@@ -37,19 +37,19 @@ h1{
 
 /* Introduction CSS */
 #intro img{
-	left: 15%;
-	height: 60%;
-	z-index: 5;
+	height: 68%;
+	left: 17%;
+	z-index: 101;
 }
 
 #intro h1{
-	left: 40%
+	left: 35%
 }
 
 /* About CSS */
-#about img{
-	height: 60%;
-	z-index: 0;
+.about-pics{
+	height: 68%;
+	z-index: -5;
 }
 
 /* Fun Facts CSS */
@@ -60,7 +60,11 @@ h1{
 }
 
 /* End CSS */
-#end img{
+#field{
 	width: 100%;
 	z-index: 10;
+}
+
+.mini-llama{
+	width: 8%;
 }
