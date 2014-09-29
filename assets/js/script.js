@@ -23,6 +23,15 @@ $(document).ready(function(){
     }, 1500)
   });
 
+  $("#temple-container").css("height", $("#temple").height());
+  $("#gallery-container").css("height", $("#gallery-container").width());
+  $("#field-container").css("height", $("#field").height());
+
+  $(window).on('resize', function () {
+    $("#temple-container").css("height", $("#temple").height());
+    $("#gallery-container").css("height", $("#gallery-container").width()*4/3);
+    $("#field-container").css("height", $("#field").height());
+  });
 
   (function($) {
     $window = $(window);
@@ -65,18 +74,7 @@ $(document).ready(function(){
     enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false).listen(100);
  })(jQuery);
 
- $(function () {
-  $("#temple-container").css("height", $("#temple").height());
-  $("#gallery-container").css("height", $("#gallery-container").width()*4/3);
-  $("#field-container").css("height", $("#field").height());
-  $(window).on('resize', function () {
-    $("#temple-container").css("height", $("#temple").height());
-    $("#gallery-container").css("height", $("#gallery-container").width()*4/3);
-    $("#field-container").css("height", $("#field").height());
-  });
-});
 
- 
 });
 
 
