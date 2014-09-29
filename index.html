@@ -5,6 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300">
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/skrollr.min.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr-2.7.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/enquire.min.js"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
 </head>
 
@@ -16,8 +18,6 @@
 		<div><a id="nav4">explore</a></div>
 	</div>
 
-	<div id="skrollr-body">
-
 	<div id="intro">
 		<img src="assets/images/llama-front.png" data-0="top:15%" data-1000="top:25%;" data-1500="top: 25%"
 			data-2500="" data-3000="top:-100%">
@@ -25,29 +25,31 @@
 	</div>
 
 	<div id="about">
-		<img class="about-pics" src="assets/images/llama-back.png" data-1000="top:25%; opacity: 0; left: 17%"
-			data-1500="opacity: 1; left: 2%" data-2500="" data-3000="top:-100%">
-		<img class="about-pics" src="assets/images/llama-profile.png" data-1000="top:25%; opacity: 0; left: 17%"
-			data-1500="opacity: 1; left: 30%" data-2500="" data-3000="top:-100%">
-		<a href="/llama/about"><h1 data-0="top: 100%;left: 50%" data-1000="" data-1500="top:25%; opacity: 1;" data-2500="" 
+		<a href="/llama/about"><h1 data-0="top: 100%;left: 47%" data-1000="" data-1500="top:25%; opacity: 1;" data-2500="" 
 			data-3000="top:-100%">About the Llama</h1></a>
+		<img id="back-llama"class="about-pics" src="assets/images/llama-back.png" data-1000="top:25%; opacity: 0; left: 17%"
+			data-1500="opacity: 1; left: 2%" data-2500="" data-3000="top:-100%">
+		<img id = "front-llama" class="about-pics" src="assets/images/llama-front.png">
+		<img id="side-llama"class="about-pics" src="assets/images/llama-profile.png" data-1000="top:25%; opacity: 0; left: 17%"
+			data-1500="opacity: 1; left: 30%" data-2500="" data-3000="top:-100%">
 	</div>
 	
 	<div id="fun">
-		<img id="temple" src="assets/images/temple.svg" data-0="display: none" data-2999="display:block"data-3000="opacity:0;" data-3500="opacity:.85;"
-			data-6000="transform:scale(1);" data-6800="transform:scale(0);">
-		<h1 data-300="display: none;"data-3001="display: block;opacity:0; transform:rotate(0deg);" data-3750="top:20%; left:33%; opacity:1; transform:rotate(720deg);" data-5500="transform:scale(1);transform:rotate(720deg)" data-6800="transform:rotate(720deg);opacity: 0"><a href="/llama/powers">Llama Powers</a></h1>
-		<img src="assets/images/llama-ninja.png" data-4000="top: 70%; left: 100%" data-6400="left: -50%;">
+		<h1 data-300="display: none;"data-3001="display: block;opacity:0; transform:rotate(0deg);" data-3750="top:20%; left:29%; opacity:1; transform:rotate(720deg);" data-5500="transform:scale(1);transform:rotate(720deg)" data-6800="transform:rotate(720deg);opacity: 0"><a href="/llama/powers">Llama Powers</a></h1>
+		<div id="temple-container">
+		<img id="temple" src="assets/images/temple.svg" data-0="display: none" data-2999="display:block"data-3000="opacity:0;" data-3500="opacity:.85;" data-6000="transform:scale(1);" data-6800="transform:scale(0);">
+		<img id="ninja-llama"src="assets/images/llama-ninja.png" data-4000="top: 70%; left: 100%" data-6400="left: -50%;">	
+		</div>	
 	</div>
 
 	<div id="end">
 		<h1 data-7000="left: 29%; opacity: 0;top: 8%" data-7500="opacity:1;">Explore the World</h1>
-		<img id="field" src="assets/images/field.jpg" style="width: 100%" data-6700="opacity: 0;top: 8%" data-7500="opacity:.85;">
-		<a href="http://lillyfwang.com"><img class="mini-llama" src="assets/images/llama-normal.png" data-7500="opacity: 0;top: 45%; left:10%" data-8000="opacity:1;" data-9500=""></a>
-		<a href="https://github.com/lillyfwang"><img class="mini-llama" src="assets/images/llama-wizard.png" data-8200="opacity: 0;top: 75%; left:40%" data-8800="opacity:1;"></a>
-		<a href="https://www.linkedin.com/in/lillyfwang"><img class="mini-llama" src="assets/images/llama-fancy.png" data-7900="opacity: 0;top: 70%;left:80%" data-8200="opacity:1;"></a>
-		<a href="http://www.zappos.com/"><img class="mini-llama" src="assets/images/llama-super.png" data-7750="opacity: 0;top: 55%;left:60%" data-8100="opacity:1;"></a>
-	</div>
-
+		<div id="field-container">
+		<img id="field" src="assets/images/field.jpg" data-6700="opacity: 0;top: 8%" data-7500="opacity:.85;">
+		<a href="http://lillyfwang.com"><img id="llama-normal" class="mini-llama" src="assets/images/llama-normal.png" data-7500="opacity: 0;top: 45%; left:10%" data-8000="opacity:1;" data-9500=""></a>
+		<a href="https://github.com/lillyfwang"><img id="llama-wizard"class="mini-llama" src="assets/images/llama-wizard.png" data-8200="opacity: 0;top: 75%; left:40%" data-8800="opacity:1;"></a>
+		<a href="https://www.linkedin.com/in/lillyfwang"><img id="llama-fancy"class="mini-llama" src="assets/images/llama-fancy.png" data-7900="opacity: 0;top: 70%;left:80%" data-8200="opacity:1;"></a>
+		<a href="http://www.zappos.com/"><img id="llama-super"class="mini-llama" src="assets/images/llama-super.png" data-7750="opacity: 0;top: 55%;left:60%" data-8100="opacity:1;"></a>
+		</div>
 	</div>
 </body>

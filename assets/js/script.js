@@ -23,9 +23,60 @@ $(document).ready(function(){
     }, 1500)
   });
 
-  $(function() {
-    skrollr.init();
-  });
 
-  $("#gallery-container").css("height", $("#gallery-container").width());
+  (function($) {
+    $window = $(window);
+    $body = $('body');
+    adjustWindow();
+
+    
+    function adjustWindow(){
+        winH = $window.height();
+        winW = $window.width();
+
+        if(winH <= 550) {
+            winH = 550;
+        }
+
+        if( winW >= 768) {
+            var s = skrollr.init();
+        } else {
+            var s = skrollr.init();
+            s.destroy();
+        }
+    
+        if(Modernizr.touch) {
+          var s = skrollr.init();
+          s.destroy();
+        }
+    }
+    
+    function initAdjustWindow() {
+        return {
+            match : function() {
+                adjustWindow();
+            },
+            unmatch : function() {
+                adjustWindow();
+            }
+        };
+    }
+
+    enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false).listen(100);
+ })(jQuery);
+
+ $(function () {
+  $("#temple-container").css("height", $("#temple").height());
+  $("#gallery-container").css("height", $("#gallery-container").width()*4/3);
+  $("#field-container").css("height", $("#field").height());
+  $(window).on('resize', function () {
+    $("#temple-container").css("height", $("#temple").height());
+    $("#gallery-container").css("height", $("#gallery-container").width()*4/3);
+    $("#field-container").css("height", $("#field").height());
+  });
 });
+
+ 
+});
+
+
