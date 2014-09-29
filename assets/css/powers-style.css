@@ -80,3 +80,14 @@ h4{
   content: "";
   display: block;
 }
+
+@media (max-width: 768px) {
+  .subcategory, .subcategory-r, #basics, #width-25{
+  	margin: 2% 0;
+  	padding: 0;
+  	display: block;
+  	width: 100%;
+    clear: both;
+    position: inline-block;
+  }
+ }

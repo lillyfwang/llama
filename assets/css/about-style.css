@@ -47,34 +47,34 @@ h3{
 }
 
 #gallery-1{
-  width: 67%;
-  height: 50%;
+  width: 66%;
+  height: 66%;
 }
 
 #gallery-2{
-  height: 25%;
+  height: 33%;
   width: 33%;
 }
 
 #gallery-3{
-  height: 25%;
+  height: 33%;
   width: 33%;
 }
 
 #gallery-4{
-  height: 25%;
+  height: 33%;
   width: 33%
 }
 
 #gallery-5{
-  height: 50%;
-  width: 67%;
-  float: right;
+  height: 33%;
+  width: 33%;
 }
 
 #gallery-6{
-  overflow: hidden;
-  height: 25%;
+    overflow: hidden;
+
+  height: 33%;
   width: 33%;
 }
 
@@ -87,6 +87,7 @@ h3{
 }
 
 .gallery-img{
+  overflow: hidden;
   float:left;
   position: relative;
   margin: 0;
@@ -118,4 +119,15 @@ h3{
 
 .gallery-hidden:hover{
   opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+  #gallery-container{
+    width: 100%;
+  }
+
+  .gallery-hidden{
+    display: inline-block;
+  }
 }
