@@ -46,43 +46,44 @@ h3{
   margin-bottom: 1%;
 }
 
+#gallery-1{
+  width: 67%;
+  height: 50%;
+}
+
+#gallery-2{
+  height: 25%;
+  width: 33%;
+}
+
+#gallery-3{
+  height: 25%;
+  width: 33%;
+}
+
+#gallery-4{
+  height: 25%;
+  width: 33%
+}
+
+#gallery-5{
+  height: 50%;
+  width: 67%;
+  float: right;
+}
+
+#gallery-6{
+  overflow: hidden;
+  height: 25%;
+  width: 33%;
+}
+
 .gallery-portrait{
   width: 100%;
 }
 
 .gallery-landscape{
   height: 100%;
-}
-
-#gallery-1{
-  width: 67%;
-  height: 67%;
-}
-
-#gallery-2{
-  height: 34%;
-  width: 33%;
-}
-
-#gallery-3{
-  height: 33%;
-  width: 33%;
-}
-
-#gallery-4{
-  height: 33%;
-  width: 34%
-}
-
-#gallery-5{
-  height: 66%;
-  width: 66%;
-  float: right;
-}
-
-#gallery-6{
-  height: 33%;
-  width: 34%;
 }
 
 .gallery-img{

@@ -1,74 +1,223 @@
-body{
-	margin: 0;
-	padding: 0;
+
+/**********
+MOBILE CSS
+***********/
+@media only screen and (max-width: 768px) {
+	body{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	a {
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	h1{
+		font-size: 2em;
+		font-family: "Nothing You Could Do", "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	/* Navigation Bar CSS */
+	#nav{
+		width: 100%;
+		height: 10%;
+		position: fixed;
+		top: 0;
+		z-index: 200;
+	}
+
+	#nav div{
+		display: inline-block;
+		text-align: center;
+		width: 24%;
+		font-size: 100%;
+	}
+
+	#nav a{
+		font-family: "Roboto", Calibri, sans-serif;
+		font-weight: 100;
+	}
+
+	/* Introduction CSS */
+	#intro{
+		margin-bottom: 12em;
+	}
+
+		#intro img{
+			display: block;
+			margin: 10% auto 0;
+			height: 70%;
+			z-index: 101;
+		}
+
+	/* About CSS */
+	#about{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 12em;
+	}
+
+		#front-llama{
+			width: 16%;
+			height: auto;
+		}
+
+		#back-llama{
+			width: 16%;
+			height: auto;
+		}
+
+		#side-llama{
+			width: 38%;
+			height: auto;
+		}
+
+	/* Fun Facts CSS */
+	#fun{
+		margin-bottom: 10em;
+	}
+
+		#temple{
+			position: relative;
+			width: 150%;
+			left: -10%;
+		}
+
+		#ninja-llama{
+			position: relative;
+			top: -35%;
+			left: 70%;
+			width: 20%;
+		}
+
+	/* End CSS */
+		#field{
+			position: relative;
+			width: 150%;
+			left: -10%;
+			z-index: -10;
+		}
+
+		.mini-llama{
+			position: relative;
+			width: 10%;
+		}
+
+		#llama-super{
+			top: -20%;
+			left: 20%;
+		}
+
+		#llama-wizard{
+			top: -40%;
+			left: 5%;
+		}
+
+		#llama-fancy{
+			top: -50%;
+			left: 60%;
+		}
+
+		#llama-normal{
+			top: -60%;
+			left: 30%;
+		}
 }
 
-a {
-	color: black;
-	text-decoration: none;
-	cursor: pointer;
-}
+/*******************
+LARGER SCREENS ONLY
+********************/
+@media only screen and (min-width: 768px) {
+	body{
+		margin: 0;
+		padding: 0;
+	}
 
-h1{
-	font-size: 4em;
-	font-family: "Nothing You Could Do", "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
-}
+	a {
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
 
-/* Navigation Bar CSS */
-#nav{
-	width: 100%;
-	height: 5%;
-	position: fixed;
-	top: 0;
-	z-index: 200;
-}
+	h1{
+		text-align: right;
+		font-size: 4em;
+		font-family: "Nothing You Could Do", "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	}
 
-#nav div{
-	padding-top: .5%;
-	display: inline-block;
-	text-align: center;
-	width: 24%;
-}
+	/* Navigation Bar CSS */
+	#nav{
+		width: 100%;
+		height: 5%;
+		position: fixed;
+		top: 0;
+		z-index: 200;
+	}
 
-#nav a{
-	font-family: "Roboto", Calibri, sans-serif;
-	font-weight: 100;
-}
+	#nav div{
+		padding-top: .5%;
+		display: inline-block;
+		text-align: center;
+		width: 24%;
+	}
 
-/* Introduction CSS */
-#intro img{
-	height: 68%;
-	left: 17%;
-	z-index: 101;
-}
+	#nav a{
+		font-family: "Roboto", Calibri, sans-serif;
+		font-weight: 100;
+	}
 
-#intro h1{
-	left: 35%
-}
+	/* Introduction CSS */
+	#intro img{
+		margin: 0;
+		height: 68%;
+		left: 17%;
+		z-index: 101;
+	}
 
-/* About CSS */
-.about-pics{
-	height: 68%;
-	z-index: -5;
-}
+	#intro h1{
+		left: 35%
+	}
 
-.about a{
-	z-index: 200;
-}
+	/* About CSS */
+	#side-llama, #back-llama{
+		height: 68%;
+		z-index: -5;
+	}
 
-/* Fun Facts CSS */
-#temple{
-	top: 10%;
-	left: 2%;
-	width: 100%;
-}
+	#front-llama{
+		display: none;
+	}
 
-/* End CSS */
-#field{
-	width: 100%;
-	z-index: 10;
-}
+	.about a{
+		z-index: 200;
+	}
 
-.mini-llama{
-	width: 8%;
+	/* Fun Facts CSS */
+	#temple{
+		top: 10%;
+		left: 2%;
+		width: 100%;
+	}
+
+	#ninja-llama{
+		display: block;
+		height: auto;
+		width: auto;
+	}
+
+	/* End CSS */
+	#field{
+		width: 100%;
+		z-index: 10;
+	}
+
+	.mini-llama{
+		width: 8%;
+	}
 }
